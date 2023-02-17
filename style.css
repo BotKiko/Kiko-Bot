@@ -1,0 +1,268 @@
+* {
+    background-color: #08000c;
+    font-family: open sans,sans-serif;
+    z-index: -10;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.nav__links {
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+    
+    .nav__links li {
+ display: inline-block;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+    
+.nav__links li a {
+    transition: all 0.3 ease 0s;
+    color: #9091a2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+    
+.nav__links a:hover {
+    color: #c1c2cb;
+    text-transform: uppercase;
+}
+
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        position: absolute;
+        left: 50px;
+}
+
+.logo {
+    background-color: transparent;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 27px;
+    cursor: pointer;
+    }
+.kiko-banner {
+    position: absolute;
+    right: 200px;
+    width: 900px;
+    top: 100px;
+    z-index: 10;
+    animation: floating 3s ease-in-out infinite;
+    background-color: transparent;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+#page-title {
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 50px;
+}
+
+#page-p {
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    font-size: 15px;
+}
+
+#gradient-one {
+    top: 700px;
+    left: -200px;
+    z-index: 1;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.gradient-circle {
+    background: radial-gradient(circle,#160030 0,#08000c 55%);
+    height: 500px;
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+*, .section-title, #process-section {
+    z-index: 2;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+        z-index: -2;
+}
+
+body, html {
+    font-family: open sans,sans-serif;
+    background-color: #08000c;
+    z-index: -2;
+    overflow-x: hidden;
+}
+
+#gradient-two {
+    top: 100px;
+    right: 150px;
+}
+
+.gradient-purple {
+    z-index: -1;
+}
+
+.gradient-purple {
+    background: radial-gradient(circle,#2b0a3a86 0,#08000c 55%);
+}
+
+.gradient-purple {
+    background: radial-gradient(circle,#2b0a3a86 0,#08000c 55%);
+    height: 700px;
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+}
+
+*, .section-title, #process-section {
+    z-index: 2;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.box_1 {
+    width: 320px;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 460px;
+    left: 200px;
+    z-index: 10;
+    text-align: center;
+    border-radius: 10px;
+    color: #9091a2;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.Mod {
+    cursor: pointer;
+}
+
+.Mod:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.Support {
+    cursor: pointer;
+}
+
+.Support:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.Memes {
+    cursor: pointer;
+}
+
+.Memes:hover {
+    color: white;
+    transition:0.3s;
+}
+
+.Chat {
+    cursor: pointer;
+}
+
+.Chat:hover {
+    color: white;
+    transition: 0.3s;
+    transition: ease-in 0.3s;
+}
+
+.heart {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 200px;
+    font-size: 15px;
+}
+
+.copyright {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    filter: drop-shadow(30px 10px 3px #fff);
+    background-color: transparent;
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #2e323d;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    right: 200px;
+    top: 44px;
+    list-style: none;
+}
+
+.btn:hover {
+    background-color: #23262f;
+    border-radius: 5px;
+}
+
+.prem__btn {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #2e323d;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    right: 350px;
+    top: 44px;
+    list-style: none;
+}
+
+.prem__btn:hover {
+    background-color: #23262f;
+    border-radius: 5px;
+}

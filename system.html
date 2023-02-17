@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiko Systems</title>
+    <style>
+* {
+    background-color: #08000c;
+    font-family: open sans,sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: -10;
+}
+
+.nav__links {
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+    
+    .nav__links li {
+ display: inline-block;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+    
+.nav__links li a {
+    transition: all 0.3 ease 0s;
+    color: #9091a2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+    
+.nav__links a:hover {
+    color: #c1c2cb;
+    text-transform: uppercase;
+}
+
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        position: absolute;
+        left: 50px;
+}
+
+.logo {
+    background-color: transparent;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 27px;
+    cursor: pointer;
+    }
+
+.line {
+    width: 10px;
+    background-image: linear-gradient(#172777, #6d30aa);
+    height: 370px;
+    position: absolute;
+    top: 280px;
+    left: 200px;
+    border-radius: 100px;
+}
+
+#gradient-one {
+    top: 700px;
+    left: -200px;
+    z-index: 1;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.gradient-circle {
+    background: radial-gradient(circle,#160030 0,#08000c 55%);
+    height: 500px;
+    position: absolute;
+    width: 500px;
+    z-index: -1;
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+*, .section-title, #process-section {
+    z-index: 2;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+        z-index: -2;
+}
+
+body, html {
+    font-family: open sans,sans-serif;
+    background-color: #08000c;
+    z-index: -2;
+    overflow-x: hidden;
+}
+
+#gradient-two {
+    top: 100px;
+    right: 150px;
+}
+
+.gradient-purple {
+    z-index: -1;
+}
+
+.gradient-purple {
+    background: radial-gradient(circle,#2b0a3a86 0,#08000c 55%);
+}
+
+.gradient-purple {
+    background: radial-gradient(circle,#2b0a3a86 0,#08000c 55%);
+    height: 700px;
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+}
+
+*, .section-title, #process-section {
+    z-index: 2;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.easy {
+    position: absolute;
+    top: 280px;
+    left: 220px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.easyp1 {
+    position: absolute;
+    top: 280px;
+    left: 250px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.handle {
+    position: absolute;
+    top: 320px;
+    left: 250px;
+    font-weight: normal;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: 15px;
+}
+
+.Kiko {
+    width: 300px;
+    z-index: 10;
+    position: absolute;
+    right: 500px;
+    top: 280px;
+    background-color: transparent;
+    filter: drop-shadow(30px 10px 3px #110211);
+}
+
+.devs {
+    position: absolute;
+    top: 350px;
+    left: 220px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.devsp2 {
+    position: absolute;
+    top: 350px;
+    left: 250px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.easy__devs {
+    position: absolute;
+    top: 390px;
+    left: 250px;
+    font-weight: normal;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: 15px;
+}
+
+.uptime {
+    position: absolute;
+    top: 420px;
+    left: 220px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.upp3 {
+    position: absolute;
+    top: 420px;
+    left: 250px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.uptime__p {
+    position: absolute;
+    top: 460px;
+    left: 250px;
+    font-weight: normal;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: 15px;
+}
+
+.staff_h {
+    position: absolute;
+    top: 490px;
+    left: 220px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.staff {
+    position: absolute;
+    top: 490px;
+    left: 250px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.staff__p {
+    position: absolute;
+    top: 530px;
+    left: 250px;
+    font-weight: normal;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: 15px;
+}
+
+.support_h {
+    position: absolute;
+    top: 560px;
+    left: 220px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.support {
+    position: absolute;
+    top: 560px;
+    left: 250px;
+    font-weight: bolder;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: x-large;
+}
+
+.support__p {
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    font-weight: normal;
+    background-color: transparent;
+    z-index: -10;
+    color: white;
+    font-size: 15px;
+}
+
+.support_server {
+    text-decoration: underline;
+    color: white;
+}
+
+.logo {
+    background-color: transparent;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 27px;
+    cursor: pointer;
+}
+
+.copyright {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    filter: drop-shadow(30px 10px 3px #fff);
+    background-color: transparent;
+}
+
+.heart {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 200px;
+    font-size: 15px;
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #2e323d;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    right: 200px;
+    top: 45px;
+    list-style: none;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    background-color: #23262f;
+    border-radius: 5px;
+}
+.btn {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #2e323d;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    right: 200px;
+    top: 45px;
+    list-style: none;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    background-color: #23262f;
+    border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="home">Home</a></li>
+                <li><a href="system">Kiko System</a></li>
+                <li><a href="premium">Plans</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="logo" src="kik.png" alt="">
+
+    <div class="line">
+    </div>
+
+    <div class="gradient-circle" id="gradient-one"></div>
+    <div class="gradient-purple" id="gradient-two"></div>
+
+    <h1 class="easy">1 </h1>
+    <h1 class="easyp1">Easy to handle</h1>
+    <p class="handle">The bot is simple & very user friendly to use.</p>
+
+    <h1 class="devs">2 </h1>
+    <h1 class="devsp2">Good Developers</h1>
+    <p class="easy__devs">The developer of the bot often responds to question, and is active!</p>
+
+    <h1 class="uptime">3 </h1>
+    <h1 class="upp3">Uptime</h1>
+    <p class="uptime__p">We have premium servers that are secure, fast & a very high uptime rate.</p>
+
+    <h1 class="staff_h">4 </h1>
+    <h1 class="staff">Staff Team</h1>
+    <p class="staff__p">Our staff team is excpected to have a high level of professionalism when helping users!</p>
+
+    <h1 class="support_h">5 </h1>
+    <h1 class="support">Need More Support?</h1>
+    <p class="support__p">If you have need more support join our <a class="support_server" href="https://discord.gg/2ArmcSprha" target="_blank">support server</a> </p>
+
+   <img class="Kiko" src="images/qwheb uwqb euwqb ewq.png" alt="">
+
+   <img class="logo" src="images/kik.png" alt="">
+
+   <P class="copyright">© 2023, Snozzi </P>
+
+   <P class="heart">Developed with ❤️ by Snozzi</P>
+
+   <a href="https://discord.com/api/oauth2/authorize?client_id=1063506976040046664&permissions=8&scope=bot%20applications.commands" target="_blank"><button class="btn">ADD TO SERVER</button></a>
+
+</body>
+</html>
